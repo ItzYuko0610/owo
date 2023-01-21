@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Project 2 - A bunch of Shoes</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;300;400;700&display=swap" rel="stylesheet">
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Acme&display=swap');
+        *{
+            font-family: 'Acme', sans-serif;
+            margin: 0rem;
+            padding: 0rem;
+            border: 0rem;
+            outline: 0rem;
+            box-sizing: border-box;
+            font: inherit;
+        }
+        html, body{
+            -ms-user-select: none;
+            user-select: none;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            height:100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: cadetblue;
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 1.1rem;
+            font-weight: 500;
+        }
+        button, textarea, input{
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        .shoecard{
+            width: min(100%, 42rem);
+            height:12.5rem;
+            border-radius: 0.5rem;
+            background-color: darkgrey;
+            padding: 1.1rem 2rem;
+        }
+        .size-container{
+            flex: auto;
+            height: 50px;
+            width: 100%;
+            background-color:darkslategrey;
+            border-radius: 0.1rem;
+        }
+    </style>
+</head>
+<body>
+    <article class="shoecard">
+        <header>
+            <img src="https://ae01.alicdn.com/kf/H3234171b77974ed58aa96d37b76f5a3bY/High-Top-Canvas-Shoes-Women-Patchwork-Cute-All-Match-Lace-UpFlat-Sneakers-Girl-Chic-Reflective-Embroidery.jpg_640x640.jpg">
+            <h1>ˏˋ°•*⁀➷ LACOSTE</h1>
+        </header>
+        <div class="sizes-container">
+
+            <label>10</label>
+            <input type="radio" name="shoesize" id="TEN">
+            <label>9</label>
+            <input type="radio" name="shoesize" id="NINE">
+            <label>8</label>
+            <input type="radio" name="shoesize" id="EIGHT">
+            <label>7</label>
+            <input type="radio" name="shoesize" id="SEVEN">
+            
+            <h2>ˏˋ°•*⁀➷ SIZES</h2>
+
+        </div>
+        <div class="colours-container">
+
+            <label>ˏˋ°•*⁀➷ Colour Picker</label>
+            <input type="color">
+        </div>
+        <footer><button class="buy-now">ˏˋ°•*⁀➷ BUY NOW!</button></footer>
+    </article>
+</body>
+</html>
